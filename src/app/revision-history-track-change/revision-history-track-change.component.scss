@@ -1,0 +1,29 @@
+.sidebar {
+  padding: 0 10px;
+  position: relative;
+  min-width: var(--ck-sample-sidebar-width);
+  font-size: 20px;
+  background: hsl(0, 0%, 98%);
+  border: 1px solid hsl(0, 0%, 77%);
+  overflow: hidden;
+  min-height: 100%;
+
+  /* #2733. Do not overlap the left border if the sidebar is longer than content. */
+  box-shadow: -1px 0 0 0 hsl(0, 0%, 77%);
+}
+ckeditor {
+  min-height: 200px;
+}
+.sidebar.narrow {
+  min-width: 60px;
+}
+
+.sidebar.hidden {
+  display: none;
+}
+
+.revision-viewer-container-row {
+  .ck-editor {
+    width: 66.66%;
+  }
+}

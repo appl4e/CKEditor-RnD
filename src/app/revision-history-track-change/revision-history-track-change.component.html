@@ -1,0 +1,25 @@
+<div class="container">
+  <div class='row'>
+    <div class="col-12 col-lg-8" id="editor-container">
+      <ckeditor [editor]="Editor" (ready)="onReady($event)" [config]="editorConfig" [data]="data"></ckeditor>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div #sidebar class='sidebar'></div>
+      <!-- Structure for the revision viewer editor !-->
+
+    </div>
+  </div>
+  <div id="revision-viewer-container">
+    <div class="editor-container" class="row revision-viewer-container-row">
+      <div id="revision-viewer-editor"></div>
+      <div class="sidebar col-12 col-lg-4" id="revision-viewer-sidebar"></div>
+    </div>
+  </div>
+
+
+  <div class="mt-3 mb-5">
+    See the editor data in the console.
+    <button class="btn btn-success" (click)="showEditorDataInConsole($event)">Get editor data</button>
+  </div>
+
+</div>
